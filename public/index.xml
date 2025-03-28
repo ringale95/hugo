@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Javascript and DMDD</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Posts on Javascript and DMDD</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Mar 2025 22:11:14 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Data Technologies: Lecture 1</title>
+      <link>http://localhost:1313/posts/bigdata/lecture1/</link>
+      <pubDate>Thu, 27 Mar 2025 22:11:14 -0400</pubDate>
+      <guid>http://localhost:1313/posts/bigdata/lecture1/</guid>
+      <description>&lt;h1 id=&#34;big-data-technologies-understanding-the-fundamentals&#34;&gt;Big Data Technologies: Understanding the Fundamentals&lt;/h1&gt;&#xA;&lt;h2 id=&#34;what-is-big-data&#34;&gt;What is Big Data?&lt;/h2&gt;&#xA;&lt;p&gt;Big Data refers to data sets that are too large or complex to be dealt with by traditional data processing applications. Today&amp;rsquo;s digital landscape generates unprecedented volumes of data:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Platforms like Facebook and Instagram generate &lt;strong&gt;terabytes of data daily&lt;/strong&gt; through images, videos, text, and user interactions&lt;/li&gt;&#xA;&lt;li&gt;IoT devices continuously stream data from millions of sources&lt;/li&gt;&#xA;&lt;li&gt;Business transactions produce massive logs requiring real-time analysis&lt;/li&gt;&#xA;&lt;li&gt;Scientific instruments and experiments generate enormous datasets&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To effectively store, process, and analyze such massive datasets, specialized Big Data technologies are required.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Big Data Technologies: Lecture 2 - MapReduce and Data Processing</title>
+      <link>http://localhost:1313/posts/bigdata/lecture2/</link>
+      <pubDate>Thu, 27 Mar 2025 22:11:14 -0400</pubDate>
+      <guid>http://localhost:1313/posts/bigdata/lecture2/</guid>
+      <description>&lt;h2 id=&#34;overview-of-mapreduce&#34;&gt;Overview of mapreduce&lt;/h2&gt;&#xA;&lt;p&gt;Prerequisite:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;hadoop common: 3.3.0&lt;/li&gt;&#xA;&lt;li&gt;hadoop-mapreduce-client-core - 3.3.0&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;In hadoop block size : 128 MB by default&lt;/p&gt;&#xA;&lt;p&gt;Mapper processes input data into small chunks.&lt;/p&gt;&#xA;&lt;p&gt;What is longwritable and text?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hadoop works on distributed system and we travel data over network which needs &lt;code&gt;serialization&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;For long we have &lt;code&gt;LongWritable&lt;/code&gt; and Int we have &lt;code&gt;IntWritable&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Context object helps the mapper and reducer to interact with rest of hadoop system and it has interfaces which can help to emit output&lt;/li&gt;&#xA;&lt;li&gt;StringTokenizer helps to break the line words&lt;/li&gt;&#xA;&lt;li&gt;After writing map reduce code in driver class we will initialize a new map reduce &lt;code&gt;Job&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;(K,V) -&amp;gt; Mapper -&amp;gt; (K,V) -&amp;gt; (K, List&lt;!-- raw HTML omitted --&gt;) -&amp;gt; Reducer -&amp;gt; (K,V)&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vue</title>
+      <link>http://localhost:1313/posts/vue/vue/</link>
+      <pubDate>Sat, 08 Mar 2025 15:53:47 -0500</pubDate>
+      <guid>http://localhost:1313/posts/vue/vue/</guid>
+      <description>&lt;h2 id=&#34;vue&#34;&gt;Vue&lt;/h2&gt;&#xA;&lt;p&gt;Vue is a JavaScript framework for building user interfaces. It builds on top of standard HTML, CSS, and JavaScript and provides a declarative, component-based programming model that helps you efficiently develop user interfaces of any complexity.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;We use &lt;code&gt;&amp;lt;template&amp;gt;&lt;/code&gt; to describe what UI should look like on JS state. Vue takes care of rendering correct HTML without manipulating DOM.&lt;/li&gt;&#xA;&lt;li&gt;Vue tracks JS changes and updates DOM&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;template&amp;gt;&#xA;  &amp;lt;h1&amp;gt;Hello, {{ name }}!&amp;lt;/h1&amp;gt;&#xA;&amp;lt;/template&amp;gt;&#xA;&#xA;&amp;lt;script setup&amp;gt;&#xA;import { ref } from &amp;#39;vue&amp;#39;;&#xA;&#xA;const name = ref(&amp;#39;John&amp;#39;);&#xA;&amp;lt;/script&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;API styles:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OOPS revision</title>
+      <link>http://localhost:1313/posts/oops/oops/</link>
+      <pubDate>Fri, 21 Feb 2025 16:51:24 -0500</pubDate>
+      <guid>http://localhost:1313/posts/oops/oops/</guid>
+      <description>&lt;h2 id=&#34;oops&#34;&gt;OOPS&lt;/h2&gt;&#xA;&lt;p&gt;Create JAVA file with name as public class name. If there are two classes in one file remember this!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In Java, the filename must match the public class name.&lt;/li&gt;&#xA;&lt;li&gt;If a file contains multiple classes, only one class can be public.&lt;/li&gt;&#xA;&lt;li&gt;If you keep public class Main, the filename must be Main.java.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;JVM: runs java application at run time and calls the main method in java code.&lt;/p&gt;&#xA;&lt;p&gt;.java -&amp;gt;(compile) .class  -&amp;gt; JVM memory(method, heap, stack, PC registers)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Two pointer Pattern</title>
+      <link>http://localhost:1313/posts/java/twopointer/</link>
+      <pubDate>Fri, 21 Feb 2025 16:51:24 -0500</pubDate>
+      <guid>http://localhost:1313/posts/java/twopointer/</guid>
+      <description>&lt;h2 id=&#34;all-about-two-pointers&#34;&gt;All about Two pointers&lt;/h2&gt;&#xA;&lt;h3 id=&#34;why-to-use-two-pointer-technique&#34;&gt;Why to use two pointer technique?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Solve problems  involving sorting, searching, manipulating arrays or lists.&lt;/li&gt;&#xA;&lt;li&gt;Reduce time complexity from O(n2) to O(n) and space complexity is O(1)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ex: Two Sum, Three sum, Closes two sum, four sum, trapping rain water&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;types-of-two-pointer-techniques&#34;&gt;Types of Two pointer techniques:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Opposite ends approach:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;One pointer starts from left and other on right. Used for problems like &lt;strong&gt;finding pairs&lt;/strong&gt; in a sorted array.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Opposite pairs helps identify pairs efficiently if sum is too small move left pointer forward.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Same Direction approach: Both pointers move in same direction at different speeds. Ex:** Remove duplicates** from a sorted array or &lt;strong&gt;fast and slow pointer&lt;/strong&gt; approach&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Naive method might take more time or space to execute but two pointer take less time and space.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fundamentals</title>
+      <link>http://localhost:1313/posts/javascript/fundamnetals/fundamentals/</link>
+      <pubDate>Sun, 16 Feb 2025 06:59:55 -0500</pubDate>
+      <guid>http://localhost:1313/posts/javascript/fundamnetals/fundamentals/</guid>
+      <description>&lt;h2 id=&#34;js-fundamentals&#34;&gt;JS Fundamentals&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;tag contains JS code which can be automatically executed when browser processes the tag.&lt;/p&gt;&#xA;&lt;p&gt;Inside script we can specify JS modules. Simple scripts are wriiten html whereas complex scripts reside in separate file. Browser can download it and cache it so whenever other pages reference the same script it will take from cache instead of downloading it again. This reduces traffic and makes pages faster&lt;/p&gt;&#xA;&lt;p&gt;Below is invalid :&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/posts/javascript/introduction/intro/</link>
+      <pubDate>Sun, 16 Feb 2025 06:59:55 -0500</pubDate>
+      <guid>http://localhost:1313/posts/javascript/introduction/intro/</guid>
+      <description>&lt;h2 id=&#34;what-is-javascript&#34;&gt;What is Javascript?&lt;/h2&gt;&#xA;&lt;p&gt;Javascript was initially creating to make webpages alive. Program in this language is called &lt;code&gt;scripts&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It does not require any compilation to run. JS runs directly in the browser as plain text. Browser interprets JS code line by line and executes it. Today, Javascript executes on Browser and servers or any device which has &lt;code&gt;Javascript Engine&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Different browser engines have different codenames:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Chrome : V8&lt;/li&gt;&#xA;&lt;li&gt;Firefox : Spidermonkey&lt;/li&gt;&#xA;&lt;li&gt;Safari : SquirrelFish&lt;/li&gt;&#xA;&lt;li&gt;ID: Chakra&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;How do engines work?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Database management and Database Design</title>
+      <link>http://localhost:1313/posts/dmdd/normalization-forms/</link>
+      <pubDate>Fri, 14 Feb 2025 21:12:53 -0500</pubDate>
+      <guid>http://localhost:1313/posts/dmdd/normalization-forms/</guid>
+      <description>&lt;h2 id=&#34;normalization-in-relational-database-design&#34;&gt;Normalization in relational database design.&lt;/h2&gt;&#xA;&lt;p&gt;As part of DAMG6210 Database Management &amp;amp; Database Design, this post highlights the necessary aspects of normalizing your dataset.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-to-normalize-a-database&#34;&gt;Why to normalize a database?&lt;/h2&gt;&#xA;&lt;p&gt;Normalization is a process in database design that organizes data to minimize redundancy and dependency. It helped to solve below problems in database:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Update Anomaly&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Modification Anomalies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If data is repeated it will become inconsistent to update data everywhere&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Deletion Anomalies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If we delete a record to remove a piece of information, we might as a consequence lose some additional information&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Insertion Anomalies&#xA;&lt;ul&gt;&#xA;&lt;li&gt;If we don&amp;rsquo;t have information about primary key we might not be able to insert the data&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image.png&#34; alt=&#34;alt&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
